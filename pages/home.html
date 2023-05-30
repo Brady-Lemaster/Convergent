@@ -7,10 +7,13 @@
     </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">@layer utilities{
-      .blem-navbar { @apply fixed bg-teal-300 h-max w-full rounded-b-2xl z-12345; }
-      .blem-navitemright { @apply p-3 bg-yellow-300 h-max w-max rounded-2xl mr-2 my-2 inline-block float-right; }
-      .blem-navimage { @apply w-10 h-10; } 
-      .blem-navsolid { @apply m-20 }
+      .blemnav-navbar { @apply fixed bg-teal-300 h-max w-full rounded-b-2xl z-12345; }
+      .blemnav-item-left { @apply p-3 bg-yellow-300 h-max w-max rounded-2xl mr-2 my-2 inline-block float-right; }
+      .blemnav-item-left { @apply p-3 bg-yellow-300 h-max w-max rounded-2xl mr-2 my-2 inline-block float-left; }
+      .blemnav-itemcurrent-right { @apply p-6 bg-yellow-300 h-max w-max rounded-2xl mr-2 my-2 inline-block float-right; }
+      .blemnav-itemcurrent-left { @apply p-6 bg-yellow-300 h-max w-max rounded-2xl mr-2 my-2 inline-block float-left; }
+      .blemnav-image { @apply w-10 h-10; } 
+      .blemnav-navbarphysical { @apply m-20 }
       body { @apply yellow-300; }
       h1 { @apply text-teal-800 text-5xl hover:text-teal-500 hover:text-6xl block; }
       h2 { @apply text-teal-800 text-4xl hover:text-teal-500 hover:text-5xl block; }
@@ -24,7 +27,18 @@
   </head>
   <body>
     <div class="blem-navbar">
-      <div class
+      <div class="blemnav-itemleft-current">
+        <p>Home</p>
+      </div>
+      <div class="blemnav-itemleft">
+        <p>Other</p>
+      </div>
+      <div class="blemnav-itemright">
+        <p>Other</p>
+      </div>
+      <div class="blemnav-itemright-current">
+        <p>Home</p>
+      </div>
     </div>
     <h1>h1</h1>
     <h2>h2</h2>
