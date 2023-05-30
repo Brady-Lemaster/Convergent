@@ -1,7 +1,7 @@
 function importTailwind() {
   const tailwindDOM = document.createElement("script");
-  containingElement.innerHTML = "<script src="">";
+  tailwindDOM.src = "https://cdn.tailwindcss.com";
   document.body.appendChild(tailwindDOM);
 }
 
-tailwind()
+importTailwind()
