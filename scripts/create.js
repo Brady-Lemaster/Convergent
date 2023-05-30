@@ -1,9 +1,7 @@
 function importTailwind() {
   const tailwindDOM = document.createElement("script");
-  tailwindDOM.src = "";
+  containingElement.innerHTML = "<script src="">";
   document.body.appendChild(tailwindDOM);
 }
-
-containingElement.innerHTML = "<div id="divA"><div id="divB">Some Text"</div></div>";
 
 tailwind()
